@@ -1,0 +1,9 @@
+demo:
+  security:
+    permit-all-path:
+      - /auth/**
+      - /swagger-ui.html
+      - /webjars/**
+      - /swagger-resources/**
+      - /v2/*
+      - /csrf

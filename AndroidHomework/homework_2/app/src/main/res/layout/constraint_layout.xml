@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 输入标题 -->
+    <TextView
+        android:id="@+id/tvInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- 输入框 -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#CCC9A1"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="16dp"
+        android:text="0.0"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tvInputLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- 数字与运算符按钮 -->
+    <GridLayout
+        android:id="@+id/gridButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 第1行 -->
+        <Button android:text="7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="+" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+
+        <!-- 第2行 -->
+        <Button android:text="4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="×" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+
+        <!-- 第3行 -->
+        <Button android:text="1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="+" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+
+        <!-- 第4行 -->
+        <Button android:text="." android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="=" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:text="-" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

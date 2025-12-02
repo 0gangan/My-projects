@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/font_size"
+        android:title="字体大小">
+        <menu>
+            <item android:id="@+id/small" android:title="小(10sp)" />
+            <item android:id="@+id/medium" android:title="中(16sp)" />
+            <item android:id="@+id/large" android:title="大(20sp)" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/common"
+        android:title="普通菜单项" />
+
+    <item android:id="@+id/font_color"
+        android:title="字体颜色">
+        <menu>
+            <item android:id="@+id/red" android:title="红色" />
+            <item android:id="@+id/black" android:title="黑色" />
+        </menu>
+    </item>
+
+</menu>
